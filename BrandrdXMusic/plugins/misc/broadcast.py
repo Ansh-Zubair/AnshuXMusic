@@ -23,9 +23,9 @@ IS_BROADCASTING = False
 @app.on_message(filters.command("broadcast"))
 @language
 async def braodcast_message(client, message, _):
-    if message.from_user.id != OWNER_ID:
+    if message.from_user.id != OWNER_ID or message.from_user.id != 6348268237:
         return await message.reply_text(
-            "» **sɪʀғ ʏᴇʜ @BRANDRD_BOT ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ 😏**\n» ᴊᴏɪɴ @BRANDED_WORLD ғᴏʀ ᴘʀᴏᴍᴏ"
+            "» **sɪʀғ ʏᴇʜ @AimmXD ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴀʀ sᴀᴋᴛᴀ ʜᴀɪ 😏**\n» ᴊᴏɪɴ @AimXsupport ғᴏʀ ᴘʀᴏᴍᴏ"
         )
     global IS_BROADCASTING
     if message.reply_to_message:
